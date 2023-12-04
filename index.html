@@ -11,8 +11,8 @@
     <header class="header">
         <section class="header__nav">
             <a href="#about" class="nav__item"><button class="nav__item--button">About</button></a>
-            <a href="#contact" class="nav__item"><button class="nav__item--button">Contact</button></a>
             <a href="#projects" class="nav__item"><button class="nav__item--button">Projects</button></a>
+            <a href="#contact" class="nav__item"><button class="nav__item--button">Contact</button></a>
         </section>
         <section class="header__nav--backtotop">
             <a href="#top" class="nav__item--top"><button class="nav__item--button">Home</button></a>
@@ -49,8 +49,8 @@
                 <h1 class="content__header--text">Who Am I?</h1>
                 <p class="content__header--description">Hi! My name is Simon, A 23 yearold Swedish developer. <br> 
                     My background in emergency healthcare has given me a unique perspective on problem solving and teamwork. <br>
-                    I have always had a passion for computers and technology, and i am now pursuing a career in web development. <br>
-                    Join me on my journey to becomming the best developer i can be!</p>
+                    I have always had a passion for computers and technology, and I am now pursuing a career in web development. <br>
+                    Join me on my journey to becomming the best developer I can be!</p>
             </article>
             <section class="techstack__header">
                 <div class="techstack__head--text">
@@ -104,34 +104,64 @@
                             <div class="techstack__item art__img--psd"></div>
                             <p class="art__name">Photoshop</p>
                         </li>
-                        <li class="art__item">
-                            <div class="art__img"></div>
-                            <p class="art__name">GPT 4</p>
-                        </li>
                     </ul>
                 </section>
             </section>
-        </section>
-        <section class="content__" id="contact">
-            <article class="content__header">
-                <h1 class="content__header--text">Contact</h1>
-                <p class="content__header--description">If you want to get in touch with me, feel free to contact me over on linkedin<br>
-                    or send me an email at
-                    <a href="mailto:simgus1234@gmail.com" class="content__header--link">
+            <section class="content__projects" id="projects">
+                <section class="content__projects__header">
+                    <h1 class="projects__header--text">Recent Projects</h1>
+                    <p class="content__header--description">Here are some of the projects i have been working on!</p>
+                </section>
 
+                <article class="projects__wrapper--left">
+                    <picture class="project__image">
+                        <source srcset="/Assets/img/Project1.png" type="image/png">
+                        <img src="/Assets/img/Project1.png" alt="Project 1">
+                    </picture>
+                    <section class="project__text">
+                        <h2 class="project__text--header">The Planets</h2>
+                        <p class="project__text--description">A small app using vanilla Javascript and .JSON to create a informatic page on the planets!</p>
+                        <a class="project__button" href="https://remarkable-sprinkles-c53865.netlify.app/" ><button class="project__link">Check it out!</button></a>
+                </article>
+                <article class="projects__wrapper--right">
+                    <picture class="project__image">
+                        <source srcset="/Assets/img/Project1.png" type="image/png">
+                        <img src="/Assets/img/Project1.png" alt="Project 1">
+                    </picture>
+                    <section class="project__text">
+                        <h2 class="project__text--header">The Planets</h2>
+                        <p class="project__text--description">A small app using vanilla Javascript and .JSON to create a informatic page on the planets!</p>
+                        <a class="project__button" href="https://remarkable-sprinkles-c53865.netlify.app/" ><button class="project__link">Check it out!</button></a>
+                </article>
+
+            </section>
+            <section class="content__contact" id="contact">
+                <article class="content__header">
+                    <h1 class="content__header--text">Contact</h1>
+                    <p class="content__header--description">If you want to get in touch with me, feel free to contact me over on linkedin or fill out the form below<br> I will get back to you as soon as possible!</p>
+                </article>
+                <form action="" method="get">
+                    <section class="contact__form">
+                        <section class="contact__form--wrapper">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Your name here">
+                        </section>
+                            <section class="contact__form--wrapper">
+                            <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Your email here">
+                        </section>  
+                        <section class="contact__form--wrapper">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message here"></textarea>
+                        </section> 
+                        <button class="contact__button">Send</button>
+                    </section>
+                </form>
+            </section>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <section class="footer__wrapper">
-            <section class="footer__nav">
-                <button class="nav__item">About</button>
-                <button class="nav__item">Contact</button>
-                <button class="nav__item">Projects</button>
-            </section>
-            <section class="footer__social">
-                <a href="https://www.linkedin.com/in/simon-gustavsson-1b1b3a1b2/" class="social__item">
-                    <img src="" alt="" class="social__item--icon"></a>
-            </section>
         </section>
     </footer>
 </body>
