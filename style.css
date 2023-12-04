@@ -133,8 +133,11 @@ justify-content: space-between;
     color: white;
 
     font-size: 80px;
-    -webkit-text-stroke: 2px black;
+
     top: 100px;
+}
+.content__main{
+    background-color: #1A2A26;
 }
 
 .content__header{
@@ -147,11 +150,12 @@ justify-content: space-between;
     flex-direction: column;
     align-items: center;
 
+    margin-top: 100px;
+
     color: white;
 }
 .content__header--text{
     font-size: 50px;
-    -webkit-text-stroke: 2px black;
     margin-bottom: 20px;
 }
 .content__header--description{
@@ -184,4 +188,132 @@ justify-content: space-between;
     align-items: center;
 
     color: white;
+}
+@keyframes jumping{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+.techstack__head--text{
+    animation: jumping 3s infinite;
+}
+.techstack__head--text span{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.techstack__header{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+
+    background-color: #1A2A26;
+}
+
+
+.content__techstack{
+    background-color: #1A2A26;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    overflow: hidden;
+}
+.code__item,.art__item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    justify-content: flex-start;
+    font-size: 25px;
+}
+.techstack__item{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: black;
+}
+
+.techstack__code{
+   padding: 10px;
+   border-right: 1px solid black;
+}
+
+.techstack__art{
+    padding: 10px;
+    border-left: 1px solid black;
+}
+.techstack__header--text{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.code__img--html{
+    background-image: url(/Assets/miniLogos/html-5-logo-svgrepo-com.svg);
+    background-position: center;
+    background-size: 45px;
+    background-repeat: no-repeat;
+}
+.code__img--css{
+    background-image: url(/Assets/miniLogos/css-3-svgrepo-com.svg);
+    background-position: center;
+    background-size: 45px;
+    background-repeat: no-repeat;
+}
+.code__img--js{
+    background-image: url(/Assets/miniLogos/js-svgrepo-com.svg);
+    background-position: center;
+    background-size: 45px;
+    background-repeat: no-repeat;
+}
+.code__img--react{
+    background-image: url(/Assets/miniLogos/react-javascript-js-framework-facebook-svgrepo-com.svg);
+    background-position: center;
+    background-size: 45px;
+    background-repeat: no-repeat;
+}
+
+.art__img--psd{
+    background-image: url(/Assets/miniLogos/photoshop-svgrepo-com.svg);
+    background-position: center;
+    background-size: 45px;
+    background-repeat: no-repeat;
+}
+
+.art__img--figma{
+    background-image: url(/Assets/miniLogos/figma-svgrepo-com.svg);
+    background-position: center;
+    background-size: 45px;
+    background-repeat: no-repeat;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.content__fun{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin 8s infinite;
+
+    overflow: hidden;
+}
+
+.content__fun img{
+    width: 400px;
+    height: 400px;
+    padding: 10px;
 }
