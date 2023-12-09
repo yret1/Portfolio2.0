@@ -142,20 +142,28 @@
                 </article>
                 <form action="" method="get">
                     <section class="contact__form">
-                        <section class="contact__form--wrapper">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Your name here">
-                        </section>
-                            <section class="contact__form--wrapper">
-                            <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Your email here">
-                        </section>  
-                        <section class="contact__form--wrapper">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message here"></textarea>
-                        </section> 
-                        <button class="contact__button">Send</button>
-                    </section>
+                            <form class="contact__form--wrapper" action="https://api.web3forms.com/submit" method="POST">
+
+                                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                            
+                                <section class="form__section">
+                                    <label for="name">Your Name / Company</label>
+                                    <input type="text" name="name" required>
+                                </section>
+                                <section class="form__section">
+                                    <label for="email">Your Email:</label>
+                                    <input type="email" name="email" required>
+                                </section>
+                                <section class="form__section">
+                                    <label for="message">What can i do for you?</label>
+                                 <textarea name="message" required></textarea>
+                                </section>
+                                <div class="h-captcha" data-captcha="true"></div>
+                                <button type="submit">Submit Form</button>
+                            
+                            </form>
+                            
+                            <script src="https://web3forms.com/client/script.js" async defer></script>
                 </form>
             </section>
         </section>
